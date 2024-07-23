@@ -1,1 +1,5 @@
-<p>app works!</p>
+<div class="container">
+    <ng-container *ngFor="let key of showcasesKeys">
+        <app-component-presenter [showcase]="showcases[key]"></app-component-presenter>
+    </ng-container>
+</div>

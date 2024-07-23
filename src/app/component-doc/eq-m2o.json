@@ -1,0 +1,147 @@
+{
+    "title": "eq-m2o",
+    "description": "The EqM2oComponent is an Angular component used for rendering an editable input with autocomplete functionality. It supports various customization options and emits selected items to the parent component.",
+    "components": [
+        {
+            "properties": {
+                "placeholder": "Select an item",
+                "title": "Sample Entity Selection",
+                "hint": "Start typing to search",
+                "mode": "edit",
+                "entity": "core\\User",
+                "id": 1,
+                "fields": [
+                    "id",
+                    "name"
+                ]
+            }
+        },
+        {
+            "properties": {
+                "entity": "core\\User",
+                "id": 1,
+                "mode": "view",
+                "initialSelectedItem": {
+                    "id": 1,
+                    "name": "root@equal.local"
+                }
+            }
+        }
+    ],
+    "documentation": {
+        "inputs": [
+            {
+                "name": "disabled",
+                "type": "boolean",
+                "description": "Marks the field as readonly."
+            },
+            {
+                "name": "required",
+                "type": "boolean",
+                "description": "Marks the field as mandatory."
+            },
+            {
+                "name": "nullable",
+                "type": "boolean",
+                "description": "Allows the field to be nullable."
+            },
+            {
+                "name": "placeholder",
+                "type": "string",
+                "description": "Placeholder text for the input."
+            },
+            {
+                "name": "title",
+                "type": "string",
+                "description": "Title for the widget."
+            },
+            {
+                "name": "hint",
+                "type": "string",
+                "description": "Hint/helper text for the widget."
+            },
+            {
+                "name": "mode",
+                "type": "'view' | 'edit'",
+                "description": "Sets the mode of the component."
+            },
+            {
+                "name": "entity",
+                "type": "string",
+                "description": "Full name of the entity to load."
+            },
+            {
+                "name": "id",
+                "type": "number",
+                "description": "ID of the object to load as preset value."
+            },
+            {
+                "name": "fields",
+                "type": "string[]",
+                "description": "Extra fields to load in addition to 'id' and 'name'."
+            },
+            {
+                "name": "domain",
+                "type": "any[]",
+                "description": "Additional domain for filtering result set."
+            },
+            {
+                "name": "controller",
+                "type": "string",
+                "description": "Specific controller to use for fetching data."
+            },
+            {
+                "name": "params",
+                "type": "any",
+                "description": "Extra parameters specific to the chosen controller."
+            },
+            {
+                "name": "autofocus",
+                "type": "boolean",
+                "description": "Autofocuses the input field."
+            },
+            {
+                "name": "noResult",
+                "type": "string",
+                "description": "Message displayed when no match is found."
+            },
+            {
+                "name": "displayWith",
+                "type": "(a: any) => string",
+                "description": "Custom method for rendering the items."
+            },
+            {
+                "name": "hint_always",
+                "type": "boolean",
+                "description": "Determines whether the hint should always be visible."
+            },
+            {
+                "name": "size",
+                "type": "'small' | 'normal' | 'large' | 'extra'",
+                "description": "Size of the input field."
+            },
+            {
+                "name": "panelWidth",
+                "type": "string",
+                "description": "CSS value for the panel width (dropdown)."
+            },
+            {
+                "name": "initialSelectedItem",
+                "type": "any",
+                "description": "Currently selected item."
+            }
+        ],
+        "outputs": [
+            {
+                "name": "itemSelected",
+                "type": "EventEmitter<number>",
+                "description": "Emits the selected item's ID."
+            },
+            {
+                "name": "blur",
+                "type": "EventEmitter<any>",
+                "description": "Emits when the input field loses focus."
+            }
+        ]
+    }
+}
