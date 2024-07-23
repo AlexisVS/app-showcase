@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Showcase } from '../_types/showcaseType';
+import {Component, OnInit} from '@angular/core';
+import {Showcase} from '../_types/showcaseType';
 import {
     EqDateRangeComponent,
     EqDateTimeComponent,
@@ -23,22 +23,23 @@ import eqDate from '../component-doc/eq-date.json';
     styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-    public showcases: Record<string, Showcase> = {
-        eqM2o,
-        eqString,
-        eqText,
-        eqDate,
-        eqDateTime,
-        eqDateRange,
+
+    public showcases: Record<string, { columns: number, showcase: Showcase }> = {
+        eqString: {showcase: eqString, columns: 4},
+        eqText: {showcase: eqText, columns: 4},
+        eqDate: {showcase: eqDate, columns: 2},
+        eqDateTime: {showcase: eqDateTime, columns: 2},
+        eqDateRange: {showcase: eqDateRange, columns: 2},
+        eqM2o: {showcase: eqM2o, columns: 2},
     };
 
     public ngOnInit(): void {
-        this.showcases.eqM2o.componentSelector = EqM2oComponent;
-        this.showcases.eqString.componentSelector = EqStringComponent;
-        this.showcases.eqText.componentSelector = EqTextComponent;
-        this.showcases.eqDate.componentSelector = EqDateComponent;
-        this.showcases.eqDateTime.componentSelector = EqDateTimeComponent;
-        this.showcases.eqDateRange.componentSelector = EqDateRangeComponent;
+        this.showcases.eqM2o.showcase.componentSelector = EqM2oComponent;
+        this.showcases.eqString.showcase.componentSelector = EqStringComponent;
+        this.showcases.eqText.showcase.componentSelector = EqTextComponent;
+        this.showcases.eqDate.showcase.componentSelector = EqDateComponent;
+        this.showcases.eqDateTime.showcase.componentSelector = EqDateTimeComponent;
+        this.showcases.eqDateRange.showcase.componentSelector = EqDateRangeComponent;
     }
 
     get showcasesKeys(): string[] {

@@ -5,6 +5,7 @@
     "components": [
         {
             "properties": {
+                "appearance": "outline",
                 "value": "Initial text",
                 "placeholder": "Enter your text here",
                 "disabled": false,
@@ -23,6 +24,35 @@
         },
         {
             "properties": {
+                "appearance": "outline",
+                "value": "View only text",
+                "mode": "view",
+                "title": "View Mode Text",
+                "size": "normal"
+            }
+        },
+        {
+            "properties": {
+                "appearance": "filled",
+                "value": "Initial text",
+                "placeholder": "Enter your text here",
+                "disabled": false,
+                "required": true,
+                "nullable": true,
+                "mode": "edit",
+                "title": "Sample Text Input",
+                "hint": "This is a hint",
+                "size": "large",
+                "error": "Invalid input",
+                "hasError": false,
+                "minHeight": 100,
+                "maxHeight": 200,
+                "autoGrow": true
+            }
+        },
+        {
+            "properties": {
+                "appearance": "filled",
                 "value": "View only text",
                 "mode": "view",
                 "title": "View Mode Text",

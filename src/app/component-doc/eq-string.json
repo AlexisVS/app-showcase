@@ -3,7 +3,43 @@
     "description": "The EqStringComponent is an Angular component used for rendering an editable text input field. It supports various customization options, including validation, and emits changes to the parent component.",
     "components": [
         {
+            "label": "filled edit small",
             "properties": {
+                "appearance": "filled",
+                "value": "Editable text",
+                "placeholder": "Enter text",
+                "disabled": false,
+                "required": true,
+                "nullable": true,
+                "hint_always": false,
+                "mode": "edit",
+                "title": "Editable Text Input",
+                "hint": "Type something here",
+                "size": "small",
+                "error": "Invalid input"
+            }
+        },
+        {
+            "label": "filled edit normal",
+            "properties": {
+                "appearance": "filled",
+                "value": "Editable text",
+                "placeholder": "Enter text",
+                "disabled": false,
+                "required": true,
+                "nullable": true,
+                "hint_always": false,
+                "mode": "edit",
+                "title": "Editable Text Input",
+                "hint": "Type something here",
+                "size": "normal",
+                "error": "Invalid input"
+            }
+        },
+        {
+            "label": "filled edit large",
+            "properties": {
+                "appearance": "filled",
                 "value": "Editable text",
                 "placeholder": "Enter text",
                 "disabled": false,
@@ -18,16 +54,174 @@
             }
         },
         {
+            "label": "filled edit extra",
             "properties": {
+                "appearance": "filled",
+                "value": "Editable text",
+                "placeholder": "Enter text",
+                "disabled": false,
+                "required": true,
+                "nullable": true,
+                "hint_always": false,
+                "mode": "edit",
+                "title": "Editable Text Input",
+                "hint": "Type something here",
+                "size": "extra",
+                "error": "Invalid input"
+            }
+        },
+        {
+            "label": "filled view small",
+            "properties": {
+                "appearance": "filled",
+                "value": "View only text",
+                "mode": "view",
+                "title": "View Mode Text",
+                "size": "small"
+            }
+        },
+        {
+            "label": "filled view normal",
+            "properties": {
+                "appearance": "filled",
                 "value": "View only text",
                 "mode": "view",
                 "title": "View Mode Text",
                 "size": "normal"
             }
+        },
+        {
+            "label": "filled view large",
+            "properties": {
+                "appearance": "filled",
+                "value": "View only text",
+                "mode": "view",
+                "title": "View Mode Text",
+                "size": "large"
+            }
+        },
+        {
+            "label": "filled view extra",
+            "properties": {
+                "appearance": "filled",
+                "value": "View only text",
+                "mode": "view",
+                "title": "View Mode Text",
+                "size": "extra"
+            }
+        },
+        {
+            "label": "outline edit small",
+            "properties": {
+                "appearance": "outline",
+                "value": "Editable text",
+                "placeholder": "Enter text",
+                "disabled": false,
+                "required": true,
+                "nullable": true,
+                "hint_always": false,
+                "mode": "edit",
+                "title": "Editable Text Input",
+                "hint": "Type something here",
+                "size": "small",
+                "error": "Invalid input"
+            }
+        },
+        {
+            "label": "outline edit normal",
+            "properties": {
+                "appearance": "outline",
+                "value": "Editable text",
+                "placeholder": "Enter text",
+                "disabled": false,
+                "required": true,
+                "nullable": true,
+                "hint_always": false,
+                "mode": "edit",
+                "title": "Editable Text Input",
+                "hint": "Type something here",
+                "size": "normal",
+                "error": "Invalid input"
+            }
+        },
+        {
+            "label": "outline edit large",
+            "properties": {
+                "appearance": "outline",
+                "value": "Editable text",
+                "placeholder": "Enter text",
+                "disabled": false,
+                "required": true,
+                "nullable": true,
+                "hint_always": false,
+                "mode": "edit",
+                "title": "Editable Text Input",
+                "hint": "Type something here",
+                "size": "large",
+                "error": "Invalid input"
+            }
+        },
+        {
+            "label": "outline edit extra",
+            "properties": {
+                "appearance": "outline",
+                "value": "Editable text",
+                "placeholder": "Enter text",
+                "disabled": false,
+                "required": true,
+                "nullable": true,
+                "hint_always": false,
+                "mode": "edit",
+                "title": "Editable Text Input",
+                "hint": "Type something here",
+                "size": "extra",
+                "error": "Invalid input"
+            }
+        },
+        {
+            "label": "outline view small",
+            "properties": {
+                "appearance": "outline",
+                "value": "View only text",
+                "mode": "view",
+                "title": "View Mode Text",
+                "size": "small"
+            }
+        },
+        {
+            "label": "outline view normal",
+            "properties": {
+                "appearance": "outline",
+                "value": "View only text",
+                "mode": "view",
+                "title": "View Mode Text",
+                "size": "normal"
+            }
+        },
+        {
+            "label": "outline view large",
+            "properties": {
+                "appearance": "outline",
+                "value": "View only text",
+                "mode": "view",
+                "title": "View Mode Text",
+                "size": "large"
+            }
+        },
+        {
+            "label": "outline view extra",
+            "properties": {
+                "appearance": "outline",
+                "value": "View only text",
+                "mode": "view",
+                "title": "View Mode Text",
+                "size": "extra"
+            }
         }
     ],
     "documentation": {
         "inputs": [
+            { "name": "appearance", "type": "'filled' | 'outline'", "description": "The appearance of the input. Defaults to filled." },
             { "name": "value", "type": "string | null", "description": "The current value of the text input." },
             { "name": "placeholder", "type": "string", "description": "Placeholder text for the input. Defaults to an empty string." },
             { "name": "disabled", "type": "boolean", "description": "Whether the input is disabled. Defaults to false." },

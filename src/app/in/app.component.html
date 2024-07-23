@@ -1,5 +1,12 @@
 <div class="container">
+    <h1>eQual UI components showcase</h1>
+
+    <hr>
+
     <ng-container *ngFor="let key of showcasesKeys">
-        <app-component-presenter [showcase]="showcases[key]"></app-component-presenter>
+        <app-component-presenter
+            [showcase]="showcases[key].showcase"
+            [columns]="showcases[key].columns"
+        ></app-component-presenter>
     </ng-container>
 </div>
