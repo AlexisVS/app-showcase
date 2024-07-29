@@ -1,15 +1,12 @@
 import {
     Component,
     Input,
-    OnInit,
     ViewChild,
-    ViewContainerRef,
     ComponentRef,
     OnDestroy,
     AfterViewInit,
     Renderer2,
-    ElementRef,
-    ComponentFactoryResolver,
+    ElementRef
 } from '@angular/core';
 import {DynamicHostDirective} from '../../_directives/dynamic-host.directive';
 import {Showcase} from '../../_types/showcaseType';
@@ -19,28 +16,23 @@ import {Showcase} from '../../_types/showcaseType';
     templateUrl: './component-presenter.component.html',
     styleUrls: ['./component-presenter.component.scss'],
 })
-export class ComponentPresenterComponent implements OnInit, AfterViewInit, OnDestroy {
-    @Input() showcase: Showcase;
+export class ComponentPresenterComponent implements AfterViewInit, OnDestroy {
+    @Input() public showcase: Showcase;
+    @Input() public columns: number;
 
     @ViewChild(DynamicHostDirective, {static: true}) dynamicHost?: DynamicHostDirective;
 
     public isOverlayVisible = false;
     private componentRefs: ComponentRef<any>[] = [];
-    @Input() public columns: number;
 
     constructor(
-        private viewContainerRef: ViewContainerRef,
         private renderer: Renderer2,
         private el: ElementRef,
-        private resolver: ComponentFactoryResolver
     ) {
     }
 
     ngAfterViewInit(): void {
         this.loadComponents();
-    }
-
-    ngOnInit(): void {
     }
 
     ngOnDestroy(): void {
@@ -50,20 +42,6 @@ export class ComponentPresenterComponent implements OnInit, AfterViewInit, OnDes
     toggleOverlay(): void {
         this.isOverlayVisible = !this.isOverlayVisible;
     }
-
-    // private loadComponents(): void {
-    //     const viewContainerRef = this.dynamicHost?.viewContainerRef;
-    //
-    //     if (viewContainerRef) {
-    //         viewContainerRef.clear();
-    //         this.componentRefs = this.showcase.components.map(({label, properties}) => {
-    //             const componentRef = viewContainerRef.createComponent(this.showcase.componentSelector);
-    //             // tslint:disable-next-line:no-non-null-assertion
-    //             Object.assign(componentRef?.instance!, properties);
-    //             return componentRef;
-    //         });
-    //     }
-    // }
 
     private loadComponents(): void {
         const viewContainerRef = this.dynamicHost?.viewContainerRef;

@@ -3,7 +3,7 @@
     "description": "The EqStringComponent is an Angular component used for rendering an editable text input field. It supports various customization options, including validation, and emits changes to the parent component.",
     "components": [
         {
-            "label": "filled edit small",
+            "label": "filled edit small 85%",
             "properties": {
                 "appearance": "filled",
                 "value": "Editable text",
@@ -20,7 +20,7 @@
             }
         },
         {
-            "label": "filled edit normal",
+            "label": "filled edit normal 100%",
             "properties": {
                 "appearance": "filled",
                 "value": "Editable text",
@@ -37,7 +37,7 @@
             }
         },
         {
-            "label": "filled edit large",
+            "label": "filled edit large 117%",
             "properties": {
                 "appearance": "filled",
                 "value": "Editable text",
@@ -54,7 +54,7 @@
             }
         },
         {
-            "label": "filled edit extra",
+            "label": "filled edit extra 137%",
             "properties": {
                 "appearance": "filled",
                 "value": "Editable text",
@@ -71,7 +71,7 @@
             }
         },
         {
-            "label": "filled view small",
+            "label": "filled view small 85%",
             "properties": {
                 "appearance": "filled",
                 "value": "View only text",
@@ -81,7 +81,7 @@
             }
         },
         {
-            "label": "filled view normal",
+            "label": "filled view normal 100%",
             "properties": {
                 "appearance": "filled",
                 "value": "View only text",
@@ -91,7 +91,7 @@
             }
         },
         {
-            "label": "filled view large",
+            "label": "filled view large 117%",
             "properties": {
                 "appearance": "filled",
                 "value": "View only text",
@@ -101,7 +101,7 @@
             }
         },
         {
-            "label": "filled view extra",
+            "label": "filled view extra 137%",
             "properties": {
                 "appearance": "filled",
                 "value": "View only text",
@@ -111,7 +111,7 @@
             }
         },
         {
-            "label": "outline edit small",
+            "label": "outline edit small 85%",
             "properties": {
                 "appearance": "outline",
                 "value": "Editable text",
@@ -128,7 +128,7 @@
             }
         },
         {
-            "label": "outline edit normal",
+            "label": "outline edit normal 100%",
             "properties": {
                 "appearance": "outline",
                 "value": "Editable text",
@@ -145,7 +145,7 @@
             }
         },
         {
-            "label": "outline edit large",
+            "label": "outline edit large 117%",
             "properties": {
                 "appearance": "outline",
                 "value": "Editable text",
@@ -162,7 +162,7 @@
             }
         },
         {
-            "label": "outline edit extra",
+            "label": "outline edit extra 137%",
             "properties": {
                 "appearance": "outline",
                 "value": "Editable text",
@@ -179,7 +179,7 @@
             }
         },
         {
-            "label": "outline view small",
+            "label": "outline view small 85%",
             "properties": {
                 "appearance": "outline",
                 "value": "View only text",
@@ -189,7 +189,7 @@
             }
         },
         {
-            "label": "outline view normal",
+            "label": "outline view normal 100%",
             "properties": {
                 "appearance": "outline",
                 "value": "View only text",
@@ -199,7 +199,7 @@
             }
         },
         {
-            "label": "outline view large",
+            "label": "outline view large 117%",
             "properties": {
                 "appearance": "outline",
                 "value": "View only text",
@@ -209,7 +209,7 @@
             }
         },
         {
-            "label": "outline view extra",
+            "label": "outline view extra 137%",
             "properties": {
                 "appearance": "outline",
                 "value": "View only text",
@@ -221,21 +221,73 @@
     ],
     "documentation": {
         "inputs": [
-            { "name": "appearance", "type": "'filled' | 'outline'", "description": "The appearance of the input. Defaults to filled." },
-            { "name": "value", "type": "string | null", "description": "The current value of the text input." },
-            { "name": "placeholder", "type": "string", "description": "Placeholder text for the input. Defaults to an empty string." },
-            { "name": "disabled", "type": "boolean", "description": "Whether the input is disabled. Defaults to false." },
-            { "name": "required", "type": "boolean", "description": "Whether the input is required. Defaults to false." },
-            { "name": "nullable", "type": "boolean", "description": "Whether the input can be null. Defaults to false." },
-            { "name": "hint_always", "type": "boolean", "description": "Whether the hint should always be visible. Defaults to false." },
-            { "name": "mode", "type": "'view' | 'edit'", "description": "The mode of the component, either 'view' or 'edit'. Defaults to 'view'." },
-            { "name": "title", "type": "string", "description": "Optional title for the input." },
-            { "name": "hint", "type": "string", "description": "Hint text for the input. Defaults to an empty string." },
-            { "name": "size", "type": "'small' | 'normal' | 'large' | 'extra'", "description": "The size of the input. Defaults to normal." },
-            { "name": "error", "type": "string", "description": "Error message to display when the input is invalid." }
+            {
+                "name": "appearance",
+                "type": "'filled' | 'outline'",
+                "description": "The appearance of the input. Defaults to filled."
+            },
+            {
+                "name": "value",
+                "type": "string | null",
+                "description": "The current value of the text input."
+            },
+            {
+                "name": "placeholder",
+                "type": "string",
+                "description": "Placeholder text for the input. Defaults to an empty string."
+            },
+            {
+                "name": "disabled",
+                "type": "boolean",
+                "description": "Whether the input is disabled. Defaults to false."
+            },
+            {
+                "name": "required",
+                "type": "boolean",
+                "description": "Whether the input is required. Defaults to false."
+            },
+            {
+                "name": "nullable",
+                "type": "boolean",
+                "description": "Whether the input can be null. Defaults to false."
+            },
+            {
+                "name": "hint_always",
+                "type": "boolean",
+                "description": "Whether the hint should always be visible. Defaults to false."
+            },
+            {
+                "name": "mode",
+                "type": "'view' | 'edit'",
+                "description": "The mode of the component, either 'view' or 'edit'. Defaults to 'view'."
+            },
+            {
+                "name": "title",
+                "type": "string",
+                "description": "Optional title for the input."
+            },
+            {
+                "name": "hint",
+                "type": "string",
+                "description": "Hint text for the input. Defaults to an empty string."
+            },
+            {
+                "name": "size",
+                "type": "'small' | 'normal' | 'large' | 'extra'",
+                "description": "The size of the input. Defaults to normal."
+            },
+            {
+                "name": "error",
+                "type": "string",
+                "description": "Error message to display when the input is invalid."
+            }
         ],
         "outputs": [
-            { "name": "valueChange", "type": "EventEmitter<string | null>", "description": "Emits the new value when the input changes." }
+            {
+                "name": "valueChange",
+                "type": "EventEmitter<string | null>",
+                "description": "Emits the new value when the input changes."
+            }
         ]
     }
 }
