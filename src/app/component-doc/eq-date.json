@@ -115,9 +115,9 @@
             }
         },
         {
-            "label": "filled edit small 85%",
+            "label": "fill edit small 85%",
             "properties": {
-                "appearance": "filled",
+                "appearance": "fill",
                 "value": "2024-07-19T00:00:00+0000",
                 "placeholder": "Select a date",
                 "disabled": false,
@@ -132,9 +132,9 @@
             }
         },
         {
-            "label": "filled edit normal 100%",
+            "label": "fill edit normal 100%",
             "properties": {
-                "appearance": "filled",
+                "appearance": "fill",
                 "value": "2024-07-19T00:00:00+0000",
                 "placeholder": "Select a date",
                 "disabled": false,
@@ -149,9 +149,9 @@
             }
         },
         {
-            "label": "filled edit large 117%",
+            "label": "fill edit large 117%",
             "properties": {
-                "appearance": "filled",
+                "appearance": "fill",
                 "value": "2024-07-19T00:00:00+0000",
                 "placeholder": "Select a date",
                 "disabled": false,
@@ -166,9 +166,9 @@
             }
         },
         {
-            "label": "filled edit extra 137%",
+            "label": "fill edit extra 137%",
             "properties": {
-                "appearance": "filled",
+                "appearance": "fill",
                 "value": "2024-07-19T00:00:00+0000",
                 "placeholder": "Select a date",
                 "disabled": false,
@@ -183,9 +183,9 @@
             }
         },
         {
-            "label": "filled view small 85%",
+            "label": "fill view small 85%",
             "properties": {
-                "appearance": "filled",
+                "appearance": "fill",
                 "value": "2024-07-19T00:00:00+0000",
                 "mode": "view",
                 "title": "View Only Date",
@@ -194,9 +194,9 @@
             }
         },
         {
-            "label": "filled view normal 100%",
+            "label": "fill view normal 100%",
             "properties": {
-                "appearance": "filled",
+                "appearance": "fill",
                 "value": "2024-07-19T00:00:00+0000",
                 "mode": "view",
                 "title": "View Only Date",
@@ -205,9 +205,9 @@
             }
         },
         {
-            "label": "filled view large 117%",
+            "label": "fill view large 117%",
             "properties": {
-                "appearance": "filled",
+                "appearance": "fill",
                 "value": "2024-07-19T00:00:00+0000",
                 "mode": "view",
                 "title": "View Only Date",
@@ -216,9 +216,9 @@
             }
         },
         {
-            "label": "filled view extra 137%",
+            "label": "fill view extra 137%",
             "properties": {
-                "appearance": "filled",
+                "appearance": "fill",
                 "value": "2024-07-19T00:00:00+0000",
                 "mode": "view",
                 "title": "View Only Date",
@@ -229,6 +229,11 @@
     ],
     "documentation": {
         "inputs": [
+			{
+				"name": "appearance",
+				"type": "'outline' | 'fill'",
+				"description": "The appearance of the input field. Defaults to outline."
+			},
             {
                 "name": "value",
                 "type": "string | null",

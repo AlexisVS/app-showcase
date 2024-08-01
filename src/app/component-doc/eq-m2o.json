@@ -3,7 +3,10 @@
     "description": "The EqM2oComponent is an Angular component used for rendering an editable input with autocomplete functionality. It supports various customization options and emits selected items to the parent component.",
     "components": [
         {
+            "label": "fill edit small 85%",
             "properties": {
+                "appearance": "fill",
+                "size": "small",
                 "placeholder": "Select an item",
                 "title": "Sample Entity Selection",
                 "hint": "Start typing to search",
@@ -17,7 +20,227 @@
             }
         },
         {
+            "label": "fill edit normal 100%",
             "properties": {
+                "appearance": "fill",
+                "size": "normal",
+                "placeholder": "Select an item",
+                "title": "Sample Entity Selection",
+                "hint": "Start typing to search",
+                "mode": "edit",
+                "entity": "core\\User",
+                "id": 1,
+                "fields": [
+                    "id",
+                    "name"
+                ]
+            }
+        },
+        {
+            "label": "fill edit large 117%",
+            "properties": {
+                "appearance": "fill",
+                "size": "large",
+                "placeholder": "Select an item",
+                "title": "Sample Entity Selection",
+                "hint": "Start typing to search",
+                "mode": "edit",
+                "entity": "core\\User",
+                "id": 1,
+                "fields": [
+                    "id",
+                    "name"
+                ]
+            }
+        },
+        {
+            "label": "fill edit extra 137%",
+            "properties": {
+                "appearance": "fill",
+                "size": "extra",
+                "placeholder": "Select an item",
+                "title": "Sample Entity Selection",
+                "hint": "Start typing to search",
+                "mode": "edit",
+                "entity": "core\\User",
+                "id": 1,
+                "fields": [
+                    "id",
+                    "name"
+                ]
+            }
+        },
+        {
+            "label": "fill view small 85%",
+            "properties": {
+                "appearance": "fill",
+                "size": "small",
+                "entity": "core\\User",
+                "id": 1,
+                "mode": "view",
+                "initialSelectedItem": {
+                    "id": 1,
+                    "name": "root@equal.local"
+                }
+            }
+        },
+        {
+            "label": "fill view normal 100%",
+            "properties": {
+                "appearance": "fill",
+                "size": "normal",
+                "entity": "core\\User",
+                "id": 1,
+                "mode": "view",
+                "initialSelectedItem": {
+                    "id": 1,
+                    "name": "root@equal.local"
+                }
+            }
+        },
+        {
+            "label": "fill view large 117%",
+            "properties": {
+                "appearance": "fill",
+                "size": "large",
+                "entity": "core\\User",
+                "id": 1,
+                "mode": "view",
+                "initialSelectedItem": {
+                    "id": 1,
+                    "name": "root@equal.local"
+                }
+            }
+        },
+        {
+            "label": "fill view extra 137%",
+            "properties": {
+                "appearance": "fill",
+                "size": "extra",
+                "entity": "core\\User",
+                "id": 1,
+                "mode": "view",
+                "initialSelectedItem": {
+                    "id": 1,
+                    "name": "root@equal.local"
+                }
+            }
+        },
+        {
+            "label": "outline edit small 85%",
+            "properties": {
+                "appearance": "outline",
+                "size": "small",
+                "placeholder": "Select an item",
+                "title": "Sample Entity Selection",
+                "hint": "Start typing to search",
+                "mode": "edit",
+                "entity": "core\\User",
+                "id": 1,
+                "fields": [
+                    "id",
+                    "name"
+                ]
+            }
+        },
+        {
+            "label": "outline edit normal 100%",
+            "properties": {
+                "appearance": "outline",
+                "size": "normal",
+                "placeholder": "Select an item",
+                "title": "Sample Entity Selection",
+                "hint": "Start typing to search",
+                "mode": "edit",
+                "entity": "core\\User",
+                "id": 1,
+                "fields": [
+                    "id",
+                    "name"
+                ]
+            }
+        },
+        {
+            "label": "outline edit large 117%",
+            "properties": {
+                "appearance": "outline",
+                "size": "large",
+                "placeholder": "Select an item",
+                "title": "Sample Entity Selection",
+                "hint": "Start typing to search",
+                "mode": "edit",
+                "entity": "core\\User",
+                "id": 1,
+                "fields": [
+                    "id",
+                    "name"
+                ]
+            }
+        },
+        {
+            "label": "outline edit extra 137%",
+            "properties": {
+                "appearance": "outline",
+                "size": "extra",
+                "placeholder": "Select an item",
+                "title": "Sample Entity Selection",
+                "hint": "Start typing to search",
+                "mode": "edit",
+                "entity": "core\\User",
+                "id": 1,
+                "fields": [
+                    "id",
+                    "name"
+                ]
+            }
+        },
+        {
+            "label": "outline view small 85%",
+            "properties": {
+                "appearance": "outline",
+                "size": "small",
+                "entity": "core\\User",
+                "id": 1,
+                "mode": "view",
+                "initialSelectedItem": {
+                    "id": 1,
+                    "name": "root@equal.local"
+                }
+            }
+        },
+        {
+            "label": "outline view normal 100%",
+            "properties": {
+                "appearance": "outline",
+                "size": "normal",
+                "entity": "core\\User",
+                "id": 1,
+                "mode": "view",
+                "initialSelectedItem": {
+                    "id": 1,
+                    "name": "root@equal.local"
+                }
+            }
+        },
+        {
+            "label": "outline view large 117%",
+            "properties": {
+                "appearance": "outline",
+                "size": "large",
+                "entity": "core\\User",
+                "id": 1,
+                "mode": "view",
+                "initialSelectedItem": {
+                    "id": 1,
+                    "name": "root@equal.local"
+                }
+            }
+        },
+        {
+            "label": "outline view extra 137%",
+            "properties": {
+                "appearance": "outline",
+                "size": "extra",
                 "entity": "core\\User",
                 "id": 1,
                 "mode": "view",
@@ -30,6 +253,11 @@
     ],
     "documentation": {
         "inputs": [
+			{
+				"name": "appearance",
+				"type": "'outline' | 'fill'",
+				"description": "The appearance of the input field. Defaults to outline."
+			},
             {
                 "name": "disabled",
                 "type": "boolean",

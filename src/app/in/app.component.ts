@@ -1,13 +1,13 @@
-import {ChangeDetectorRef, Component, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Showcase, Component as ComponentShowcase} from '../_types/showcaseType';
 import {
-    EqDateRangeComponent,
-    EqDateTimeComponent,
-    EqDateComponent,
-    EqM2oComponent,
-    EqStringComponent,
-    EqTextComponent,
-    // @ts-ignore
+	EqDateRangeComponent,
+	EqDateTimeComponent,
+	EqDateComponent,
+	EqM2oComponent,
+	EqStringComponent,
+	EqTextComponent,
+	// @ts-ignore
 } from 'sb-shared-lib';
 
 import eqText from '../component-doc/eq-text.json';
@@ -18,54 +18,59 @@ import eqDateRange from '../component-doc/eq-date-range.json';
 import eqDate from '../component-doc/eq-date.json';
 
 @Component({
-    selector: 'app-app',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss'],
+	selector: 'app-app',
+	templateUrl: './app.component.html',
+	styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
 
-    public showcases: Record<string, { columns: number, showcase: Showcase }> = {
-        // eqString: {showcase: eqString, columns: 4},
-        // eqText: {showcase: eqText, columns: 4},
-        // eqDate: {showcase: eqDate, columns: 4},
-        // eqDateTime: {showcase: eqDateTime, columns: 4},
-        eqDateRange: {showcase: eqDateRange, columns: 4},
-        eqM2o: {showcase: eqM2o, columns: 2},
-    };
+	public showcases: Record<string, { columns: number, showcase: Showcase }> = {
+		eqString: {showcase: eqString, columns: 4},
+		eqText: {showcase: eqText, columns: 4},
+		eqDate: {showcase: eqDate, columns: 4},
+		eqDateTime: {showcase: eqDateTime, columns: 4},
+		eqDateRange: {showcase: eqDateRange, columns: 4},
+		eqM2o: {showcase: eqM2o, columns: 4},
+	};
 
-    public forceComponentToRefresh: boolean = false;
+	public forceComponentToRefresh = false;
 
-    constructor(private cdr: ChangeDetectorRef) {
-    }
+	/* Property for displaying the background grid */
+	public showBackgroundGrid = false;
 
-    public ngOnInit(): void {
-        // this.showcases.eqString.showcase.componentSelector = EqStringComponent;
-        // this.showcases.eqText.showcase.componentSelector = EqTextComponent;
-        // this.showcases.eqDate.showcase.componentSelector = EqDateComponent;
-        // this.showcases.eqDateTime.showcase.componentSelector = EqDateTimeComponent;
-        this.showcases.eqDateRange.showcase.componentSelector = EqDateRangeComponent;
-        this.showcases.eqM2o.showcase.componentSelector = EqM2oComponent;
-    }
 
-    get showcasesKeys(): string[] {
-        return Object.keys(this.showcases);
-    }
+	public ngOnInit(): void {
+		this.showcases.eqString.showcase.componentSelector = EqStringComponent;
+		this.showcases.eqText.showcase.componentSelector = EqTextComponent;
+		this.showcases.eqDate.showcase.componentSelector = EqDateComponent;
+		this.showcases.eqDateTime.showcase.componentSelector = EqDateTimeComponent;
+		this.showcases.eqDateRange.showcase.componentSelector = EqDateRangeComponent;
+		this.showcases.eqM2o.showcase.componentSelector = EqM2oComponent;
+	}
 
-    public toggleComponentsMode(): void {
-        for (const key in this.showcases) {
-            if (!this.showcases.hasOwnProperty(key)) {
-                continue;
-            }
+	get showcasesKeys(): string[] {
+		return Object.keys(this.showcases);
+	}
 
-            this.showcases[key].showcase.components.forEach((component: ComponentShowcase): void => {
-                component.properties.mode = component.properties.mode === 'view' ? 'edit' : 'view';
-            });
-        }
+	public toggleComponentsMode(): void {
+		for (const key in this.showcases) {
+			if (!this.showcases.hasOwnProperty(key)) {
+				continue;
+			}
 
-        this.forceComponentToRefresh = !this.forceComponentToRefresh;
+			this.showcases[key].showcase.components.forEach((component: ComponentShowcase): void => {
+				component.properties.mode = component.properties.mode === 'view' ? 'edit' : 'view';
+			});
+		}
 
-        setTimeout(() => {
-            this.forceComponentToRefresh = !this.forceComponentToRefresh;
-        }, 0);
-    }
+		this.forceComponentToRefresh = !this.forceComponentToRefresh;
+
+		setTimeout(() => {
+			this.forceComponentToRefresh = !this.forceComponentToRefresh;
+		}, 0);
+	}
+
+	public toggleBackgroundGrid(): void {
+		this.showBackgroundGrid = !this.showBackgroundGrid;
+	}
 }
