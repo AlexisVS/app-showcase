@@ -17,9 +17,9 @@
 	</div>
 
 	<ng-container *ngIf="!forceComponentToRefresh">
-		<ng-container *ngFor="let key of showcasesKeys">
+		<ng-container *ngFor="let showcase of showcases">
 			<app-component-presenter
-				[showcase]="showcases[key].showcase"
+				[showcase]="showcase"
 			></app-component-presenter>
 		</ng-container>
 	</ng-container>

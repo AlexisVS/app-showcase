@@ -49,3 +49,4 @@ testem.log
 Thumbs.db
 
 **/:Zone.identifier
+src/showcases.ts
