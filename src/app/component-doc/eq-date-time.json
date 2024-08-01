@@ -1,5 +1,7 @@
 {
     "title": "eq-date-time",
+	"columns": 4,
+	"componentSelector": "EqDateTimeComponent",
     "description": "The EqDateTimeComponent is an Angular component used for rendering a date and time input field with various customization options. It supports view and edit modes, validation, and emits changes to the parent component.",
     "components": [
         {

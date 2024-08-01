@@ -24,13 +24,13 @@ import eqDate from '../component-doc/eq-date.json';
 })
 export class AppComponent implements OnInit {
 
-	public showcases: Record<string, { columns: number, showcase: Showcase }> = {
-		eqString: {showcase: eqString, columns: 4},
-		eqText: {showcase: eqText, columns: 4},
-		eqDate: {showcase: eqDate, columns: 4},
-		eqDateTime: {showcase: eqDateTime, columns: 4},
-		eqDateRange: {showcase: eqDateRange, columns: 4},
-		eqM2o: {showcase: eqM2o, columns: 4},
+	public showcases: Record<string, { showcase: Showcase }> = {
+		eqString: {showcase: eqString},
+		eqText: {showcase: eqText},
+		eqDate: {showcase: eqDate},
+		eqDateTime: {showcase: eqDateTime},
+		eqDateRange: {showcase: eqDateRange},
+		eqM2o: {showcase: eqM2o},
 	};
 
 	public forceComponentToRefresh = false;

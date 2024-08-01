@@ -1,5 +1,7 @@
 {
     "title": "eq-string",
+	"columns": 4,
+	"componentSelector": "EqStringComponent",
     "description": "The EqStringComponent is an Angular component used for rendering an editable text input field. It supports various customization options, including validation, and emits changes to the parent component.",
     "components": [
         {

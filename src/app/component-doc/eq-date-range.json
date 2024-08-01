@@ -1,5 +1,7 @@
 {
     "title": "eq-date-range",
+	"columns": 4,
+	"componentSelector": "EqDateRangeComponent",
     "description": "The EqDateRangeComponent is an Angular component designed to handle date ranges with various customization options. It supports both view and edit modes, validation, and emits changes to the parent component. The component integrates with Angular forms and Material date picker components.",
     "components": [
         {

@@ -1,5 +1,7 @@
 {
     "title": "eq-m2o",
+	"columns": 4,
+	"componentSelector": "EqM2oComponent",
     "description": "The EqM2oComponent is an Angular component used for rendering an editable input with autocomplete functionality. It supports various customization options and emits selected items to the parent component.",
     "components": [
         {

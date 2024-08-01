@@ -10,7 +10,7 @@
 
     <p *ngIf="showcase.description" class="description">{{ showcase.description }}</p>
 
-    <div class="components" [style.grid-template-columns]="'repeat('+ columns +', minmax(300px, 1fr))'">
+    <div class="components" [style.grid-template-columns]="'repeat('+ showcase.columns +', minmax(300px, 1fr))'">
             <ng-template appDynamicHost></ng-template>
     </div>
 

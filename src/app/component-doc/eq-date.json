@@ -1,5 +1,7 @@
 {
     "title": "eq-date",
+	"columns": 4,
+	"componentSelector": "EqDateComponent",
     "description": "The EqDateComponent is an Angular component used for rendering a date input field with various customization options. It supports view and edit modes, validation, and emits changes to the parent component. It also handles different date formats and localization.",
     "components": [
         {
